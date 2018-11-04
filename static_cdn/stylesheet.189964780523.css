@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Burbank";
+  src: url("fonts/BurbankBigCondensed-Bold.800e985f75a5.otf")format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Orator Std";
+  src: url("fonts/OratorStd.675120109cdd.otf")format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("fonts/AvenirLTStd-Roman.b1d7c6e085a3.otf")format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #4241c0;
+}
+.card::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+body{
+  box-sizing: border-box;
+}
+.background{
+  background-image: url("images/fortnite-splash.d047922eb931.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+.logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+}
+.logo .temod{
+  margin: 30px;
+  padding-top: 40px;
+}
+.logo .logo-text{
+  margin: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+.logo img{
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+}
+.logo .head{
+  font-family: "Burbank";
+  font-size: 80px;
+  color: white;
+}
+.logo .prize{
+  font-family: "Burbank";
+  font-size: 80px;
+  color: #fb2e62;
+}
+.logo .time{
+  font-family: "Orator Std";
+  font-size: 40px;
+  color: #fcb040;
+}
+.heading{
+  text-align: center;
+  z-index: 1;
+}
+.heading p{
+  font-family: "Burbank";
+  font-size: 80px;
+  color: #4241c0;
+}
+.heading hr{
+  margin-top: -20px;
+  width: 40%;
+  height: 1px ;
+  background-color: #fb2e62 ;
+}
+.content{
+  font-family: "Avenir LT Std";
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 150px;
+}
+.list{
+  list-style-type: none;
+}
+.list,.list li{
+  padding: 0;
+}
+.line{
+  width: 40%;
+  height: 1px;
+  background-color: #fb2e62;
+  margin-top: 10px;
+}
+.background-skew{
+  background-image: url("images/fortnite_back.30156edb38dc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 150px;
+}
+iframe{
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+  height: 400px;
+}
+.card{
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 600px;
+  overflow: scroll;
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: auto !important;
+  display: block !important;
+}
+.table{
+  border-radius: 10px !important;
+  border-collapse: separate;
+  border-spacing: 0px 5px;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: 
+}
+.table tr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.table td, th{
+  font-family: "Avenir LT Std";
+  text-align: center !important;
+}
+.table th{
+  background-color: #4241c0;
+  color: white;
+}
+.footer{
+  text-align: center;
+  padding-top: 100px;
+}
+.small-logo{
+  text-align: center;
+  padding: 10px;
+}
+.small-logo img{
+  width: 80px;
+  height: 80px;
+}
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social .fa{
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.footer .copyright{
+  font-family: "Avenir LT Std";
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0; 
+}
+
+
+@media (max-width:768px){ 
+  .background{
+    height: auto;
+  }
+  .logo .logo-text{
+    padding: 0;
+  }
+  .logo .head,.logo .prize{
+    font-size: 40px;
+  }
+  .logo .time{
+    font-size: 20px;
+  }
+  .content{
+    padding: 10px;
+  }
+  iframe{
+    width: 350px;
+    height: 175px;
+    padding: 5px;
+  }
+  .background-skew{
+    background-position: 0 50px;
+  }
+  .card{
+    width: 95%;
+  }
+  .heading p{
+    font-size: 60px;
+  }
+  .heading hr{
+    width: 80%;
+  }
+  .line{
+    width: 80%;
+  }
+}

@@ -1,0 +1,94 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <title>Temod's Sundays</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/ico" href="{% static 'images/Temod Logo.png' %}" sizes="200x200"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.3/css/fork-awesome.min.css" integrity="sha256-ZhApazu+kejqTYhMF+1DzNKjIzP7KXu6AzyXcC1gMus=" crossorigin="anonymous">
+</head>
+<body>
+<div class="background">
+  <div class="logo">
+    <div class="temod"><img src="{% static 'images/Temod Logo.png' %}" alt="Temod Logo"></div>
+    <div class="logo-text">
+      <span class="head">TEMOD'S FORTNITE SUNDAYS</span>
+      <br>
+      <span class="prize">3000 V-BUCKS</span>
+      <br><br>
+      <span class="time">CHILL SUNDAYS 6PM IST</span>
+    </div>
+  </div>
+</div>
+<br>
+<div class="heading">
+  <p>RULES</p>
+  <hr>
+</div>
+<div class="content">
+  <p>A player will enter into a duo match with a moderator or an admin (Bot). The Bot will kill itself as soon as the match starts and will spectate the player.
+    Each player will play 2 solo Duo matchs based on the given format. In case of a tie, the players with equal points will play a match each on given format and the one with more points wins.
+    If it ties again, they keep on playing matches based on given format until one wins.</p>
+  <ul class="list">
+    <li><strong>Victory Royale</strong> : +3 Points</li>
+    <li><strong>8+ Eliminations</strong>: +2 Points</li>
+    <li><strong>4+ Eliminations</strong>: +1 Point</li>
+    <li><strong>Each Elimination</strong>: +1 Point</li>
+  </ul>
+</div>
+<hr class="line">
+<br>
+<div class="background-skew">
+<iframe frameBorder="0" src="https://www.youtube.com/embed/wHpOjcP7EkY?autoplay=1">
+</iframe>
+<br><br>
+<div class="heading">
+  <p>LEADERBOARD</p>
+  <hr>
+</div>
+<br><br>
+<div class="card">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Game 1</th>
+        <th>Game 2</th>
+        <th>Total Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for player,i in mylist %}
+      <tr>
+        <td>{{i}}</td>
+        <td>{{player.name}}</td>
+        <td>{{player.game1}}</td>
+        <td>{{player.game2}}</td>
+        <td style="color: #fb2e62; font-weight: bold;">{{player.total}} </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<div class="footer">
+  <div class="small-logo"><img src="{% static 'images/Temod Logo.png' %}" alt="Temod Logo"></div>
+  <div class="social">
+    <a href="https://www.youtube.com/channel/UCQDnqgJXifIaCLqDVZdQvFA" target="_blank" class="fa fa-youtube-play"></a>
+    <a href="https://twitter.com/Tem0d" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://discord.gg/9XwAxRM" target="_blank" class="fa fa-discord" aria-hidden="true"></a>
+    <a href="https://www.instagram.com/xtemodx/" target="_blank" class="fa fa-instagram"></a>
+  </div>
+  <div class="copyright">Copyright &copy; 2018 Temod Gaming</div>
+</div>
+</div>
+</body>
+</html>
